@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27/10/2025 às 02:04
+-- Tempo de geração: 27/10/2025 às 12:00
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -55,7 +55,7 @@ INSERT INTO `courses` (`id`, `title`, `description`, `instructor`, `price`, `ima
 (4, 'Fundamentos da Terapia de Casal', 'Um curso essencial para terapeutas que desejam compreender as dinâmicas dos relacionamentos.', 'Dr. Ricardo Bastos', 349.00, '/assets/img-courses/68eed2256afc7-pexels-photo-7533347.jpeg', 'published', '2025-10-15 19:46:11', 50, 'Psicólogos e terapeutas', 'Estudo de casos', 'Avançado', 'Online', 'premium'),
 (5, 'Inteligência Emocional: Teoria e Prática', 'Desenvolva a sua inteligência emocional para tomar melhores decisões e melhorar as suas relações.', 'Beatriz Costa', 219.90, '/assets/img-courses/68eed08c4ff3e-pexels-photo-7841793.webp', 'published', '2025-10-15 19:46:11', 35, 'Profissionais e estudantes de todas as áreas.', 'Aulas teóricas e práticas', 'Todos os níveis', 'Online', 'essential'),
 (6, 'Psicologia do Desenvolvimento Infantil', 'Explore as fases do desenvolvimento infantil, desde o nascimento até à adolescência.', 'Dra. Helena Martins', 299.00, '/assets/img-courses/68eed169a8003-pexels-photo-3932929.jpeg', 'published', '2025-10-15 19:46:11', 60, 'Pais, educadores e profissionais da saúde infantil.', 'Vídeo-aulas', 'Intermediário', 'Online', 'premium'),
-(7, 'Como Lidar com a Ansiedade Social', 'Este curso oferece ferramentas práticas baseadas na TCC para gerir e superar a ansiedade social.', 'Felipe Rocha', 189.90, '/assets/img-courses/68fe872ec864e-assista.png', 'published', '2025-10-15 19:46:11', 20, 'Pessoas com ansiedade social.', 'Exercícios práticos', 'Todos os níveis', 'Online', 'essential'),
+(7, 'Como Lidar com a Ansiedade Social', 'Este curso oferece ferramentas práticas baseadas na TCC para gerir e superar a ansiedade social.', 'Felipe Rocha', 189.90, '/assets/img-courses/68fe872ec864e-assista.png', 'published', '2025-10-15 19:46:11', 26, 'Pessoas com ansiedade social.', 'Exercícios práticos', 'Todos os níveis', 'Online', 'essential'),
 (8, 'Neurociência para Terapeutas', 'Compreenda como o cérebro funciona e de que forma a neurociência pode enriquecer a prática clínica.', 'Dr. Lucas Farias', 399.00, '/assets/img-courses/68eed2466ec85-pexels-photo-2280571.webp', 'published', '2025-10-15 19:46:11', 100, 'Psicólogos, psiquiatras e neurocientistas.', 'Aulas expositivas', 'Avançado', 'Online', 'platinum'),
 (9, 'O Poder do Hábito', 'Aprenda como os hábitos são formados e como pode criar rotinas positivas para alcançar os seus objetivos.', 'Júlia Nunes', 159.50, '/assets/img-courses/68ed8aa4aa79b-transferir.jpg', 'published', '2025-10-15 19:46:11', 25, 'Qualquer pessoa interessada em desenvolvimento pessoal.', 'Ferramentas de planejamento', 'Iniciante', 'Online', 'essential'),
 (10, 'Terapia de Aceitação e Compromisso (ACT)', 'Uma introdução aos conceitos da Terapia de Aceitação e Compromisso para aumentar a flexibilidade psicológica.', 'Mariana Esteves', 279.90, '/assets/img-courses/68eed14aa4b78-pexels-photo-3913025.webp', 'published', '2025-10-15 19:46:11', 45, 'Terapeutas e estudantes de psicologia.', 'Aulas e meditações guiadas', 'Intermediário', 'Online', 'premium'),
@@ -260,7 +260,11 @@ INSERT INTO `user_courses` (`id`, `user_id`, `course_id`, `status`, `access_gran
 (3, 3, 4, 'Em Andamento', '2025-10-15 19:46:11'),
 (4, 4, 9, 'Em Andamento', '2025-10-26 14:48:03'),
 (5, 4, 14, 'Finalizado', '2025-10-26 14:48:08'),
-(6, 1, 2, 'Finalizado', '2025-10-26 20:43:13');
+(6, 1, 2, 'Finalizado', '2025-10-26 20:43:13'),
+(7, 4, 15, 'Finalizado', '2025-10-27 03:51:02'),
+(8, 4, 10, 'Finalizado', '2025-10-27 03:51:03'),
+(9, 4, 6, 'Finalizado', '2025-10-27 10:32:29'),
+(10, 4, 11, 'Finalizado', '2025-10-27 10:32:31');
 
 --
 -- Índices para tabelas despejadas
@@ -345,7 +349,7 @@ ALTER TABLE `users_app`
 -- AUTO_INCREMENT de tabela `user_courses`
 --
 ALTER TABLE `user_courses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Restrições para tabelas despejadas
